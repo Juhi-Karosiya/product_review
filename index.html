@@ -49,16 +49,22 @@
 
 <body>
 
-  <img src="./img/1.jpg" class="main-photo" alt="">
+  <img src="./img/1.jpg" class="main-photo" id="Mimage" alt="">
   <div class="container">
-    <img src="./img/1.jpg" class="sub-photo" alt="">
-    <img src="./img/2.jpg" class="sub-photo" alt="">
-    <img src="./img/3.jpg" class="sub-photo" alt="">
-    <img src="./img/4.jpg" class="sub-photo" alt="">
-    <img src="./img/5.jpg" class="sub-photo" alt="">
-    <img src="./img/6.jpg" class="sub-photo" alt="">
+    <img src="./img/1.jpg" class="sub-photo" onclick="imageChange('./img/1.jpg')" alt="">
+    <img src="./img/2.jpg" class="sub-photo" onclick="imageChange('./img/2.jpg')" alt="">
+    <img src="./img/3.jpg" class="sub-photo" onclick="imageChange('./img/3.jpg')" alt="">
+    <img src="./img/4.jpg" class="sub-photo" onclick="imageChange('./img/4.jpg')" alt="">
+    <img src="./img/5.jpg" class="sub-photo" onclick="imageChange('./img/5.jpg')" alt="">
+    <img src="./img/6.jpg" class="sub-photo" onclick="imageChange('./img/6.jpg')" alt="">
   </div>
   
+  <script>
+    function imageChange(imgName){
+        const mainImage = document.getElementById("Mimage");
+        mainImage.src = imgName;
+    }
+  </script>
    
 </body>
 </html>
